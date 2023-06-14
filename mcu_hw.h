@@ -1,9 +1,4 @@
 
-#ifndef port_lcfg_H_
-#define port_lcfg_H_
-
-
-
 #include	"services.h"
 #define GPIO_APB
 
@@ -22,7 +17,9 @@
 #endif 
 
 
-
+/********************************************************
+												Macros
+***********************************************************/
 
 #define GPIODATA(x)		*( (volatile uint32_t*) (GPIO_OFFSET(x)+ 0x3FC))
 #define GPIODIR(x)		*( (volatile uint32_t*) (GPIO_OFFSET(x)+ 0x400))
@@ -47,4 +44,3 @@
 #define GPIOAMSEL(x)	*( (volatile uint32_t*) (GPIO_OFFSET(x)+ 0x528))
 #define RCGCGPIO			*( (volatile uint32_t*) ( (0x400FE000)+  (0x608)))
 	
-#endif

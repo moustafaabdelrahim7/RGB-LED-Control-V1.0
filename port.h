@@ -1,7 +1,19 @@
+
+/********************************************************
+												includes
+***********************************************************/
 #include "port_lcfg.h"
 #include "services.h"
+
+/********************************************************
+												Macros
+***********************************************************/
 #define port_pin_num			4
 
+
+/********************************************************
+												prototypes
+***********************************************************/
 void GPIO_INIT_PIN(const str_port_config_t*str_port_configPTR);
 
 void GPIO_SET_PIN	(enu_port_num_t enu_port_num,enu_port_pin_num_t enu_port_pin_num);

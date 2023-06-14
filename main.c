@@ -7,10 +7,10 @@ extern const str_port_config_t	str_port_config_arr[4];
 
 int main(void)
 {	
-	uint8_t u8_lv_Counter=1;
+	uint8_t u8_lv_Counter=True;
 	LED_INIT(str_port_config_arr);
 	BUTTON_INIT(str_port_config_arr);
-	while(1)
+	while(True)
 	{
 		if((BUTTON_READ(PORT_PIN_4,PORT_F)))
 		{

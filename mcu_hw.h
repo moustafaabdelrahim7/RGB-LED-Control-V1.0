@@ -17,7 +17,9 @@
 #endif 
 
 
-
+/********************************************************
+												Macros
+***********************************************************/
 
 #define GPIODATA(x)		*( (volatile uint32_t*) (GPIO_OFFSET(x)+ 0x3FC))
 #define GPIODIR(x)		*( (volatile uint32_t*) (GPIO_OFFSET(x)+ 0x400))
